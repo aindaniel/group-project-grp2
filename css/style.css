@@ -1,0 +1,75 @@
+.fa-instagram
+    {
+        color: rgb(255, 255, 255);
+    }
+
+.fa-instagram:hover
+    {
+    color: #4F2400; 
+    }
+
+.fa-facebook
+    {
+        color: rgb(255, 255, 255)
+    }
+
+.fa-facebook:hover
+    {
+        color: #4F2400;
+    }
+
+.fa-twitter
+    {
+        color: rgb(255, 255, 255);
+    }
+
+.fa-twitter:hover
+    {
+        color: #4F2400;
+    }
+
+    <body style="background-color: white;">
+
+    <div class="logo" onclick="window.location.href='index.html'"></div>
+    <link href="images/1.png" rel="icon">
+
+   <div class="box1">
+       <p style="text-align: center;"><img src="images/1.png" width="150px" alt="logo"></p>
+       </div>
+
+   <div id="boxed-wrapper">
+       <div class="fusion-sides-frame"></div>
+       <div id="wrapper" class="fusion-wrapper"></div>
+           <div id="home" style="position:relative;top:-1px;"></div>
+
+
+           <div class="box2">
+               <button onclick="document.location='menu.html'">Our Menu</button>
+           
+               <button onclick="document.location='events.html'">Events & Promotion</button>
+               
+               <button onclick="document.location='location.html'">Locate Us</button>
+               
+               <button onclick="document.location='contact.html'">Contact</button>
+           </div>
+
+           <div class="box3" style="font-family: 'Fredoka one', cursive;"
+
+           <div align="center" style="font-family:'Fredoka One', cursive;"> 
+               <p style="color: #ffffff; font-size: 30px; font-family: 'Fredoka one', cursive;" >L O C A T E &nbsp;&nbsp; U S!! </p> 
+               <P style="color: #ffffff; font-size: 100%;">Good food is never far away</P>
+           </div>
+
+           <meta charset="utf-8">
+
+           <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+           div.box1
+           {
+            background-color: white;
+            padding: 11px;
+           }
+
+           <div class="fusion-sides-frame"></div>
+            <div id="wrapper" class="fusion-wrapper"></div>
+            <div id="home" style="position:relative;top:-1px;"></div>

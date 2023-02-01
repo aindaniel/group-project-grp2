@@ -1,0 +1,359 @@
+<html>
+    <head>
+        <title> Contact - A&W Malaysia</title>
+
+        <link rel="icon" href="images/1.png" type="image/icon type" width="50px" height="10px">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Fredoka+One&family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a623992fc6.js" crossorigin="anonymous"></script>
+    </head>
+
+        <style>
+
+
+            div.row
+                {
+                    padding: 100px;
+                    margin: auto;
+                    font-size: 40px;
+                    background-image: url(images/wallpaper.jpeg);
+                    width: auto;
+                    height: 1700px;
+                }
+                
+            button
+                {
+                    font-family: 'DynaPuff', cursive;
+                    font-size: larger;
+                    text-align: center;
+                    color: #ffffff;
+                    border: none;
+                    padding: 15px 90px;
+                    background-color: #F15D22;
+                }
+               
+            button:hover
+                {
+                    color: #4F2400;
+                }
+        
+            button:active
+                {
+                    background-color:#f58027;
+                }
+
+            div.box1
+                {
+                    background-color: rgba(255, 255, 255, 0);
+                    padding: 10;
+                    text-align: center;
+                }
+        
+            div.title
+                {
+                    background-color: #4F2400;
+                    padding: 10;
+                    height: 140px;
+                }
+            
+            div.bigbox
+                {
+                    background-color: white;
+                    font-size: medium;
+                    padding: 5px;
+                    width: auto;
+                    height: 1300px;
+                    text-align: left;
+                    color: black;
+                    margin: auto;
+                    border-radius: 10px;
+                }
+                
+            body {font-family: Arial, Helvetica, sans-serif;}
+                * {box-sizing: border-box;}
+                    
+            input[type=text], select, textarea 
+                {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+                    
+            input[type=submit] 
+                {
+                    background-color: #f58027;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                    
+            input[type=submit]:hover 
+                    {
+                      background-color: #a64a03;
+                    }
+                    
+            .container 
+                    {
+                      border-radius: 5px;
+                      background-color: white;
+                      padding: 20px;
+                    }
+
+            div.box3
+                    {
+                      text-align: left;
+                      font-family: 'Fredoka One', cursive;;
+
+                    }
+                    
+            div.box4
+                {
+                    background-color: white;
+                    padding: 5px;
+                    width: 1200px;
+                    height: 150px;
+                    text-align: left;
+                    color: black;
+                    margin: auto;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+
+            div.box5
+                {
+                    background-color: #F15D22;
+                    padding: 10;
+                }
+
+            .center 
+                {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 1000px;
+                }
+                  
+            .btn 
+                {
+                    border: none;
+                    background-color: inherit;
+                    padding: 14px 28px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+
+              /* On mouse-over */
+              .btn:hover {background: #eee;}
+
+              .success {color: green;}
+              .info {color: dodgerblue;}
+              .warning {color: orange;}
+              .danger {color: red;}
+              .default {color: black;}
+
+            hr 
+                {
+                    display: block;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-style: inset;
+                    border-width: 1px;
+                }
+
+
+         </style>
+
+        <body style="background-color: white;">
+       
+
+         <div class="box1"><div class="logo" onclick="window.location.href='index.html'">
+         <img src="images/1.png" width="150px";>
+         </div>
+        <br>
+        
+        <div class="box5">
+        <button onclick="document.location='menu.html'">Our Menu</button>
+
+        <button onclick="document.location='events.html'">Events & Promotions</button>
+            
+        <button onclick="document.location='location.html'">Locate Us</button>
+
+        <button onclick="document.location='contact.html'">Contact</button>
+        </div>
+       
+        
+        <div class="title">
+            <h3 style="text-align: center; font-size: x-large; letter-spacing: 3; font-family: 'Fredoka One', cursive; color: white;">
+                CONTACT US!</h3>
+            <p style="font-family: 'Montserrat', sans-serif; font-size: medium; color: white; letter-spacing: 2; text-align: center; ">
+                We'd love to hear it from you!</p>
+        </div>
+                
+        <div class="row">
+         
+            <div class="bigbox">
+              <div class="box3">
+                <h3 style="text-align: center; font-family:'Fredoka One', cursive; ; font-size: 30px;">We want it from You!</h3>
+                    <div class="container">
+                      <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Full name">
+                    
+                        <label for="lname">Mobile</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Mobile Number">
+                        
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Email Address">
+                        
+                        <div class="box3">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                          <option value="food">Food</option>
+                          <option value="services">Services</option>
+                          <option value="vouchers">Vouchers</option>
+                          <option value="cleanliness">Cleanliness</option>
+                          <option value="promotions">Promotions</option>
+                          <option value="others">Others</option>
+                        </select>
+
+                        <div class="box3">State<br />
+                          <select name=state class="contact-state" required><br />
+                              <option value="select_a_state">Select a State</option><br />
+                              <option value="johor">Johor</option><br />
+                              <option value="kedah">Kedah</option><br />
+                              <option value="kelantan">Kelantan</option><br />
+                              <option value="kuala_lumpur">Kuala Lumpur</option><br />
+                              <option value="labuan">Labuan</option><br />
+                              <option value="malacca">Malacca</option><br />
+                              <option value="negeri_sembilan">Negeri Sembilan</option><br />
+                              <option value="pahang">Pahang </option><br />
+                              <option value="penang">Penang</option><br />
+                              <option value="perak">Perak</option><br />
+                              <option value="perlis">Perlis</option><br />
+                              <option value="putrajaya">Putrajaya</option><br />
+                              <option value="sabah">Sabah</option><br />
+                              <option value="sarawak">Sarawak</option><br />
+                              <option value="selangor">Selangor</option><br />
+                              <option value="terengganu">Terengganu</option></p>
+                          <p></select>
+                          </div>
+                            
+                    
+                        <div class="box3">A&W Branch<br />
+                          <select name=branch class="contact-branch" required><br />
+                          <option class="johor">A&W Batu Pahat</option><br />
+                          <option class="johor">A&W Bukit Indah</option><br />
+                          <option class="johor">A&W Kluang Mall </option><br />
+                          <option class="johor">A&W Petron Taman Kota Masai Drive-Thru</option><br />
+                          <option class="johor">A&W MidValley SouthKey</option><br />
+                          <option class="johor">A&W Paradigm Mall, JB</option><br />
+                          <option class="johor">A&W Segamat</option><br />
+                          <option class="kuala_lumpur">A&W 1 Mont Kiara</option><br />
+                          <option class="kuala_lumpur">A&W EKO Mall Cheras</option><br />
+                          <option class="kuala_lumpur">A&W Express MidValley Megamall</option><br />
+                          <option class="kuala_lumpur">A&W G-Village</option><br />
+                          <option class="kuala_lumpur">A&W Kepong</option><br />
+                          <option class="kuala_lumpur">A&W KL East KL</option><br />
+                          <option class="kuala_lumpur">A&W MidValley Megamall</option><br />
+                          <option class="kuala_lumpur">A&W Setapak Central</option><br />
+                          <option class="kuala_lumpur">A&W Sri Petaling</option><br />
+                          <option class="kuala_lumpur">A&W Sunway Velocity</option><br />
+                          <option class="kuala_lumpur">A&W Taman Tun Dr Ismail (TTDI)</option><br />
+                          <option class="kuala_lumpur">A&W Wangsa Walk</option><br />
+                          <option class="malacca">A&W Aeon Bandaraya Melaka</option><br />
+                          <option class="malacca">A&W Dataran Pahlawan</option><br />
+                          <option class="malacca">A&W OBR Ayer Keroh (Overhead Bridge Restaurant)</option><br />
+                          <option class="negeri_sembilan">A&W Bandar Baru Nilai</option><br />
+                          <option class="negeri_sembilan">A&W Mesa Mall, Nilai</option><br />
+                          <option class="negeri_sembilan">A&W Mydin Seremban 2</option><br />
+                          <option class="negeri_sembilan">A&W R&amp;R Seremban North</option><br />
+                          <option class="negeri_sembilan">A&W R&amp;R Seremban South</option><br />
+                          <option class="negeri_sembilan">A&W Seremban Drive-Thru</option><br />
+                          <option class="pahang">A&W East Coast Mall</option><br />
+                          <option class="penang">A&W 1st Avenue</option><br />
+                          <option class="penang">A&W Penang Hill</option><br />
+                          <option class="perak">A&W Ipoh Parade</option><br />
+                          <option class="perak">A&W R&amp;R Tapah</option><br />
+                          <option class="putrajaya">A&W Express IOI Putrajaya</option><br />
+                          <option class="putrajaya">A&W IOI City Mall</option><br />
+                          <option class="selangor">A&W Petronas Bandar Kinrara</option><br />
+                          <option class="selangor">A&W Petronas Bukit Tinggi</option><br />
+                          <option class="selangor">A&W Central i-City</option><br />
+                          <option class="selangor">A&W Citta Mall</option><br />
+                          <option class="selangor">A&W Cyberjaya</option><br />
+                          <option class="selangor">A&W Petronas Damai Perdana</option><br />
+                          <option class="selangor">A&W DPulze Cyberjaya</option><br />
+                          <option class="selangor">A&W EVO Mall Bangi</option><br />
+                          <option class="selangor">A&W IOI Puchong Mall</option><br />
+                          <option class="selangor">A&W Kajang</option><br />
+                          <option class="selangor">A&W Kota Kemuning</option><br />
+                          <option class="selangor">A&W OBR Sungai Buloh (Overhead Bridge Restaurant)</option><br />
+                          <option class="selangor">A&W Petron Bandar Seri Putra</option><br />
+                          <option class="selangor">A&W Petaling Jaya Drive-Thru</option><br />
+                          <option class="selangor">A&W PJ Palms</option><br />
+                          <option class="selangor">A&W R&amp;R Dengkil</option><br />
+                          <option class="selangor">A&W R&amp;R Rawang Drive-Thru</option><br />
+                          <option class="selangor">A&W Sungai Buloh</option><br />
+                          <option class="selangor">A&W Setia City Mall</option><br />
+                          <option class="selangor">A&W Seventeen Mall</option><br />
+                          <option class="selangor">A&W Sunway Pyramid</option><br />
+                          <option class="selangor">A&W USJ Taipan</option><br />
+                          <option class="terengganu">A&W Kemaman</option><br />
+                          <option class="terengganu">A&W Mydin Gong Badak</option><br />
+                          <option class="terengganu">A&W Pantai Batu Buruk</option></p>
+                          <p></select>
+                          </div></div>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message/feedback here! " style="height:200px">
+                        </textarea></form>
+                    <br>
+                        <input type="submit" value="Submit">
+                      </form>
+                      <br>
+                      <br>
+                    </div>
+                      <br>
+                      <br>
+                      <img src="images/x.jpeg" alt="rootyclub" class="center" width="1000px">
+                      <br>
+                      <br>
+                      <br>
+                    
+                   
+                
+              </div>
+
+                    
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <div align="center" style="font-size: small; font-family: 'Fredoka One', cursive;">
+            <a href="https://www.instagram.com/anwmalaysia/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            <a href="https://www.facebook.com/anwmalaysia"><i class="fa-brands fa-facebook fa-3x"></i></a>
+            <a href="https://twitter.com/anwmalaysia"><i class="fa-brands fa-twitter fa-3x"></i></a>
+            <hr>
+            <p> ©2020 A & W (Malaysia) Sdn Bhd. 196301000303 (5168 – X). 
+                All rights reserved. A&W® Restaurants is committed to your privacy.</p>
+                            
+            </div>
+        </div>
+                 
+        
+        </body>    
+</html>

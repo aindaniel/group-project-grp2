@@ -1,0 +1,467 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A&W Malaysia</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+<style>
+
+		body
+		{
+			background-color: white;
+		}
+
+		div.row
+            {
+                padding: 80px;
+                margin: auto;
+                font-size: 40px;
+                background-image: url(images/wallpaper.jpeg);
+                width: auto;
+                height: 2400;
+            }
+
+		h1
+		{
+			text-align: center;
+			color: black;
+			letter-spacing: 5px;
+			padding: 10px 100px;
+			background-color: rgb(255, 255, 255);
+			font-family: 'Fredoka One', cursive;
+			font-size: 30px;
+			border-radius: 10px;
+			height: 40px;
+		}
+
+		h2 {
+			text-align: center;
+			color: #f15d22;
+			letter-spacing: 5px;
+			padding: 10px 100px;
+			background-color: rgb(255, 255, 255);
+			font-family: 'Shojumaru', cursive;
+			font-size: 40px;
+		}
+
+		button
+		{
+			font-size: large;
+			font-family: 'Luckiest Guy', cursive;
+			border: none;
+			background-color: #4f2400;
+			padding: 15px 90px;
+			text-align: center;
+			color: rgb(255, 255, 255);
+			border-radius: 10px;
+		}
+
+
+		button:hover
+		{
+			color: #4f2400; 
+		}
+
+		button:active
+		{
+			background-color: rgba(255, 255, 255, 0);
+		}
+
+		.btn
+		{
+		border: 1px solid white;
+		background: none;
+		padding: 5px 20px;
+		font-size: 25px;
+		font-family: 'DynaPuff', cursive;
+		cursor: pointer;
+		margin: 10px;
+		transition: 0.8s;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		}
+
+		.btn1,.btn2
+		{
+			color: white;
+		}
+
+		.btn3,.btn4
+		{
+			color: white;
+		}
+
+		.btn1:hover,.btn2:hover
+		{
+			color: #f7d4b9;
+		}
+
+
+		.btn1::before,.btn3::before
+		{
+			top: 0%;
+			border-radius: 0 0 50% 50%;
+		}
+
+		.btn2::before,.btn4::before
+		{
+			bottom: 0%;
+			border-radius: 50% 50% 0 0;
+		}
+
+		.btn3::before,.btn4::before
+		{
+			height: 180%;
+		}
+		
+		.btn1:hover::before,.btn2:hover::before
+		{
+			height: 180%;
+
+		}
+
+		.btn3:hover::before,.btn4:hover::before
+		{
+			height: 0%;
+			
+		}
+
+
+		div.box1
+		{
+			background-color: rgba(255, 255, 255, 0);
+			text-align: center;
+			padding: 5;
+		}
+
+		div.box2
+		{
+			background-color: #F15D22;
+					padding: 10;
+		}
+
+		div.box3
+		{
+			background-color: #4F2400;
+		}
+
+		#stage 
+		{
+		text-align: center;
+		width: 382px;
+		height: 400px;
+		text-align: left;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		padding: 30px;
+		}
+
+		#stage a 
+		{
+		position: absolute;
+		}
+
+		#stage a img 
+		{
+		padding: 5px;
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+
+		#stage a:nth-of-type(1) 
+		{
+		animation-name: fader;
+		animation-delay: 2s;
+		animation-duration: 1s;
+		z-index: 20;
+		}
+
+		#stage a:nth-of-type(2) 
+		{
+		z-index: 10;
+		}
+
+		#stage a:nth-of-type(n+3) 
+		{
+		display: none;
+		}
+
+		@keyframes fader 
+		{
+		from { opacity: 1.0; }
+		to   { opacity: 0.0; }
+		}
+
+		.container
+			{
+				width: 90%;
+				padding: 1px;
+				margin: 100px auto;	 
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			
+
+		.box
+		{
+			width: 250px;
+			margin: 0 10px;
+			box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+			transition: 1s;
+
+		}
+
+		.box img
+		{
+			display: block;
+			width:100%;
+			border-radius: 5px;
+		}
+
+		.box:hover
+		{
+			transform: scale(1.3);
+			z-index: 2;
+		}
+
+
+		.container1 
+		{
+		position: relative;
+		text-align: center;
+		color: #f15d22;
+		font-family: 'Fredoka One', cursive;
+		font-size: 30px;
+		}
+
+		.container3 
+		{
+		position: relative;
+		text-align: center;
+		color: white;
+		text-shadow: -1px 1px 0 #000,
+								1px 1px 0 #000,
+								1px -1px 0 #000,
+								-1px -1px 0 #000;
+		font-family: 'Koulen', cursive;
+		font-size: 40px;
+		}
+
+		.centered 
+		{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+
+		.container2 img {
+		width: 100%;
+		height: auto;
+		}
+
+		button
+				{
+				
+				background-color: #F15D22;
+				padding: 15px 90px;
+				font-size: large;
+				font-family: 'DynaPuff', cursive;
+				color: white;
+				text-align: center;
+				border: none;
+				}
+
+		.fa-twitter
+		{
+			color:rgb(255, 255, 255);
+		}
+
+		.fa-twitter:hover
+		{
+			color: #4F2400;
+		}
+
+		.fa-instagram {
+			color: rgb(255, 255, 255);
+		}
+
+		.fa-instagram:hover {
+			color: #4F2400;
+		}
+
+		.fa-facebook {
+			color: #ffffff;
+		}
+
+		.fa-facebook:hover {
+			color: #4F2400;
+		}
+
+		</style>
+
+
+	</head>
+	<body>
+
+	<div class="box1"> <div class="logo" onclick="window.location.href='index.html'">
+			<p style="text-align: center;"><img src="images/1.png" width="150px" alt="logo"></p>
+			</div></div>
+
+		
+	<div class="box2">
+	<button onclick="document.location='menu.html'"> Our Menu </button>
+
+	<button onclick="document.location='events.html'"> Events & Promotions </button>
+
+	<button onclick="document.location='location.html'"> Locate Us </button>
+
+	<button onclick="document.location='contact.html'"> Contact </button>
+	</div>
+
+	 
+		
+		<div class="box3">
+		<div id="stage">
+			<a href="images/15.png"><img src="images/15.png" width="800px" style="float: center;"></a>
+			<a href="images/8.png"><img src="images/8.png" width="800px" style="float: center;"></a>
+			<a href="images/21.jpg"><img src="images/21.jpg" width="800px" style="float: center;"></a>
+			<a href="images/14.png"><img src="images/14.png" width="800px" style="float: center;"></a>
+			<a href="images/20.jpg"><img src="images/20.jpg" width="800px" style="float: center;"></a>
+			<a href="images/9.png"><img src="images/9.png" width="800px" style="float: center;"></a>
+		</div>
+		</div>
+
+		<script>
+
+			window.addEventListener("DOMContentLoaded", function(e) {
+		
+			var stage = document.getElementById("stage");
+			var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+			var arr = stage.getElementsByTagName("a");
+			for(var i=0; i < arr.length; i++) {
+				arr[i].addEventListener("animationend", fadeComplete, false);
+			}
+		
+			}, false);
+		
+		</script>
+
+	<div class="row">
+
+		<h1> OUR MENU </h1>
+
+		<div align="center" style=" letter-spacing: 13px;">
+			<button onclick="document.location='menu.html'"> Click here to see our menu! </button>
+			</div></a>
+
+		<div align="center">
+			<p><img src="images/7.png" width=1100px" style="float: center;"></p>
+		</div>
+
+		<div class="container">
+			<div class="box">
+				<img src="images/2.png" height="250px">
+			</div>
+			<div class="box">
+				<img src="images/3.png" height="250px"> 
+			</div>
+			<div class="box">
+				<img src="images/10.png" height="250px">
+			</div>
+			<div class="box">
+				<img src="images/11.png" height="250px">
+			</div>
+			<div class="box">
+				<img src="images/16.png" height="250px">
+			</div>
+		</div>
+
+
+		<h1> EVENTS & PROMOTIONS </h1>
+
+		<div align="center" style=" letter-spacing: 13px;">
+			<button onclick="document.location='events.html'"> Do not miss out! Tap here </button>
+
+		<br>
+		<br>
+		<div align="center">
+			<img src="images/6.png" height="300px">
+			<img src="images/12.png" height="300px">
+			<img src="images/18.jpg" height="300px">
+		</div>
+
+
+		<h1> LOCATE US </h1>
+
+		<div class="container1">
+			<a href="document.location='location.html'"></a>
+			<img src="images/17.jpg" alt="Snow" style="width:80%;">
+			<div class="centered">Where can you find us? For more info, click down below</div>
+			</div>
+
+		<br>
+		<div align="center" style=" letter-spacing: 13px;">
+			<button onclick="document.location='location.html'"> FIND US </button>
+			</div>
+		
+
+		<h2> We Are Hiring! </h2>
+
+		<div class="container3">
+			<img src="images/22.jpg" alt="Snow" style="width:90%;">
+			<div class="centered">Come and join us!</div>
+			</div>
+			
+			<br>
+			<div align="center" style=" letter-spacing: 13px;">
+			<button onclick="document.location='http://anwmalaysia.rymnet.com/'"> APPLY NOW </button>
+			</div>			
+
+
+			<br>
+			<br>
+			<div align="center" style="font-size: small; font-family: 'Fredoka One', cursive; letter-spacing: normal;">
+				<a href="https://www.instagram.com/anwmalaysia/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+				<a href="https://www.facebook.com/anwmalaysia"><i class="fa-brands fa-facebook fa-3x"></i></a>
+				<a href="https://twitter.com/anwmalaysia"><i class="fa-brands fa-twitter fa-3x"></i></a>
+				<hr>
+				<p style="font-family: 'Fredoka One', cursive; display: block; letter-spacing: normal;"> ©2020 A & W (Malaysia) Sdn Bhd. 196301000303 (5168 – X). 
+				All rights reserved. A&W® Restaurants is committed to your privacy.</p>
+
+			</div>
+
+	</div>
+
+	</body>
+	</html>
